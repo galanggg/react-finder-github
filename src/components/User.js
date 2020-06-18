@@ -1,6 +1,7 @@
 import React from 'react'
 import { Box, Column, Title, Card, Image, Media, Content } from 'rbx'
 import { ColumnGroup } from 'rbx/grid/columns/column-group'
+import Timeline from './Timeline'
 
 const User = React.memo(({ data }) => {
   return (
@@ -41,6 +42,7 @@ const User = React.memo(({ data }) => {
           </Box>
         </Column>
       </Column.Group>
+      <Timeline user={data} />
     </div>
   )
 })

@@ -1,5 +1,6 @@
 import React, { Suspense } from 'react'
 import 'rbx/index.css'
+import './App.css'
 const SearchNav = React.lazy(() => import('./components/SearchNav'))
 
 function App() {

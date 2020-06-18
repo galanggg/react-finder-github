@@ -1,11 +1,11 @@
 import React, { useState, useEffect, useCallback } from 'react'
 import 'rbx/index.css'
 import { Control, Input, Box, Button, Column, Title } from 'rbx'
+import Timeline from './Timeline'
 const User = React.lazy(() => import('./User'))
 
 const SearchNav = () => {
   const [data, setData] = useState([])
-  const [repo, setRepo] = useState([])
   const [username, setUsername] = useState('')
   const [show, setShow] = useState(false)
 
@@ -21,14 +21,11 @@ const SearchNav = () => {
     const resultsUser = await response.json()
 
     const repositories = await fetch(resultsUser.repos_url)
-    const resultsRepo = await repositories.json()
 
     if (resultsUser) {
       setData(resultsUser)
-      setRepo(resultsRepo)
     }
     console.log(resultsUser)
-    console.log(resultsRepo)
   }
 
   return (
