@@ -4,5 +4,5 @@
 
 - [✅] component Input.
 - [✅] Display component to show user information
-- [❌] Component to show badges and organization
-- [❌] Timeline Repository user
+- [✅] Component to show badges and organization
+- [✅] Timeline Repository user
