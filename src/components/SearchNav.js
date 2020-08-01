@@ -1,8 +1,8 @@
 import React, { useState, useEffect, useCallback } from 'react'
 import 'rbx/index.css'
 import { Control, Input, Box, Button, Column, Title } from 'rbx'
-import Timeline from './Timeline'
-const User = React.lazy(() => import('./User'))
+
+const User = React.lazy(() => import('./User.tsx'))
 
 const SearchNav = () => {
   const [data, setData] = useState([])
